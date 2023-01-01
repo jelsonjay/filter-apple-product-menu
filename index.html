@@ -1,174 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Filter</title>
-  <!--LOCAL CSS-->
-  <link rel="stylesheet" href="./css/master.css">
-</head>
-<body>
- <!---start portfolio---------->
-<section class="portfolio" id="portfolio">
-<div class="container">
-<div class="row mb-5">
-<div class="col d-flex flex-wrap text-uppercase justify-content-center">
-<div class="portfolio-header">
-<h1>Apple Product Menu</h1>
-</div>
-</div>
-</div>
-<div class="row">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Gallery Filter</title>
+		<link rel="stylesheet" href="./css/master.css" />
+	</head>
+	<body>
+		<main class="gallery">
+			<div class="wrapper">
+				<div class="item">
+					<div class="title title-center">
+						<h1>Apple Menu Filter</h1>
+					</div>
+				</div>
+				<div class="item">
+					<div class="buttons">
+						<ul id="filter-btn">
+							<li class="active" data-target="all">All</li>
+							<li data-target="mac">Mac</li>
+							<li data-target="iphone">iPhone</li>
+							<li data-target="air-pods">AirPods</li>
+							<li data-target="ipad">iPad</li>
+							<li data-target="watch">Watch</li>
+						</ul>
+					</div>
+				</div>
 
-<header class="header">
-<div class="container">
-  <div id="mainBtn">
-    <button class="btn active" onclick="filterSelection('all')">SHOW ALL</button>
-    <button class="btn" onclick="filterSelection('mac')">Mac</button>
-    <button class="btn" onclick="filterSelection('iphone')">iPhone</button>
-    <button class="btn" onclick="filterSelection('watch')">Watch</button>
-     <button class="btn" onclick="filterSelection('ipad')">iPad</button>
-    <button class="btn" onclick="filterSelection('air-pods')">AirPods</button>
-  </div>
-</div>
-</header>
+				<div class="item">
+					<div class="work-gallery">
+						<div class="cell" data-target="air-pods">
+							<div class="inner">
+								<img src="./images/air-pods.png" alt="Flexbox" />
+							</div>
+						</div>
+						<div class="cell" data-id="iphone">
+							<div class="inner">
+								<img src="./images/iphone13.png" alt="Flexbox" />
+							</div>
+						</div>
 
-</div>
+						<div class="cell" data-id="ipad">
+							<div class="inner">
+								<img src="./images/iPad Pro 11-inch.png" alt="Flexbox" />
+							</div>
+						</div>
+						<div class="cell" data-id="mac">
+							<div class="inner">
+								<img src="./images/apple-mac-1.png" alt="Flexbox" />
+							</div>
+						</div>
+						<div class="cell" data-id="air-pods">
+							<div class="inner">
+								<img src="./images/air-pods-3.jpg" alt="Flexbox" />
+							</div>
+						</div>
+						<div class="cell" data-id="mac">
+							<div class="inner">
+								<img src="./images/macbook-air.png" alt="Flexbox" />
+							</div>
+						</div>
 
+						<div class="cell" data-id="watch">
+							<div class="inner">
+								<img src="./images/watch-2.png" alt="Flexbox" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
 
-<div class="container">
-
-<!-- Portfolio Gallery Grid -->
-<div class="row">
-
-<!--Start Card 1-->
-<div class="column watch">
-<div class="card">  
-<a href="http://kuiaonline.com/" target="_blank"><img src="./images/watch-1.png" class="card-img-top portfolio-img" alt=""></a>
-<div class="portfoliotext">
-<h6 class="font-weight-bold text-center text-uppercase"><a href="http://kuiaonline.com/" target="_blank">Watch</a></h6>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, illo.</p>
-</div>
-<!--end of card-->
-<div class="card-footer text-capitalize d-flex justify-content-between">
-<p><a class="github" href="https://github.com/jelsonjay" target="_blank"><i class="fa fa-github"></i> GitHub </a></p>
-<p class="test" data-toggle="modal" data-target="#kuiaonline">Learn More</p>
-<p class="portfolio-value align-self-center py-2 px-3">
-<span class="portfolio-icon">Done</span>
-</p>
-</div>
-
-</div>
-</div>
-<!--End Card 1--->
-
- <!--Start Card 2-->
-  <div class="column air-pods">
-  <div class="card">  
-  <a href="https://github.com/jelsonjay" target="_blank"><img src="./images/air-pods.png" class="card-img-top portfolio-img" alt=""></a>
-  <h6 class="text-center"><a href="https://pegaronline.com/" target="_blank"> AirPods</a></h6>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, illo.</p>
-  <!--end of card-->
-  <div class="card-footer text-capitalize d-flex justify-content-between">
-  <p><a class="github" href="https://github.com/jelsonjay" target="_blank"><i class="fa fa-github"></i> GitHub </a></p>
-  <p class="test" data-toggle="modal" data-target="#pegaronline">Learn More</p>
-  <p class="portfolio-value align-self-center py-2 px-3">
-  <span class="portfolio-icon">Done</span>
-  </p>
-  </div>
-  </div>
-  </div>
- <!--End Card 2--->
-
-<!--Start Card 3-->
-<div class="column mac">
-<div class="card">  
-<a href="http://kuiaonline.com/" target="_blank"><img src="./images/apple-mac-1.png" class="card-img-top portfolio-img" alt=""></a>
-<div class="portfoliotext">
-<h6 class="text-center"><a href="http://kuiaonline.com/" target="_blank">Mac</a></h6>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, illo.</p>
-</div>
-<!--end of card-->
-<div class="card-footer text-capitalize d-flex justify-content-between">
-<p><a class="github" href="https://github.com/jelsonjay" target="_blank"><i class="fa fa-github"></i> GitHub </a></p>
-<p class="test" data-toggle="modal" data-target="#netflix">Learn More</p>
-<p class="portfolio-value align-self-center py-2 px-3">
-<span class="portfolio-icon">Done</span>
-</p>
-</div>
-</div>
-</div>
-<!--End Card 3--->
-  
-<!--Start Card 4-->
-<div class="column iphone">
-  <div class="card">  
-  <a href="https://github.com/jelsonjay" target="_blank">
-  <img src="./images/iphone13.png" class="card-img-top portfolio-img" alt="">
-</a>
-  <div class="portfoliotext">
-  <h6 class="text-center"><a href="https://github.com/jelsonjay" target="_blank">iPhone</a></h6>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, illo.</p>
-  </div>
-  <!--end of card-->
-  <p><a class="github" href="https://github.com/jelsonjay" target="_blank"><i class="fa fa-github"></i> GitHub </a></p>
-  <p class="test" data-toggle="modal" data-target="#sports-store">Learn More</p>
-  <p class="portfolio-value align-self-center py-2 px-3">
-  <span class="portfolio-icon">Done</span>
-  </p>
-  </div>
-  </div>
-  <!--End Card 4--->
-
-
-<!--Start Card 5-->
-<div class="column iphone">
-  <div class="card">  
-  <a href="https://github.com/jelsonjay" target="_blank">
-  <img src="./images/iphone14.png" class="card-img-top portfolio-img" alt=""></a>
-  <div class="portfoliotext">
-  <h6 class="text-center"><a href="https://my-chart.netlify.com/" target="_blank">iPhone</a></h6>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, illo.</p>
-  </div>
-  <!--end of card-->
-  <div class="card-footer text-capitalize d-flex justify-content-between">
-  <p><a class="github" href="https://github.com/jelsonjay" target="_blank"><i class="fa fa-github"></i> GitHub </a></p>
-  <p class="test" data-toggle="modal" data-target="#charts">Learn More</p>
-  <p class="portfolio-value align-self-center py-2 px-3">
-  <span class="portfolio-icon">Done</span>
-  </p>
-  </div>
-  </div>
-  </div>
-  <!--End Card 5--->
-
-
-<!--Start Card 6-->
-<div class="column watch">
-  <div class="card">  
-  <a href="https://jelsonjay.github.io/admin/" target="_blank"><img src="./images/watch-2.png" class="card-img-top portfolio-img" alt=""></a>
-  <div class="portfoliotext">
-  <h6 class="text-center"><a href="https://jelsonjay.github.io/admin/" target="_blank">Watch</a></h6>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, illo.</p>
-  </div>
-  <div class="card-footer text-capitalize d-flex justify-content-between">
-  <p><a class="github" href="https://github.com/jelsonjay" target="_blank"><i class="fa fa-github"></i> GitHub </a></p>
-  <p class="test" data-toggle="modal" data-target="#admin">Learn More</p>
-  <p class="portfolio-value align-self-center py-2 px-3">
-  <span class="portfolio-icon">Done</span>
-  </p>
-  </div>
-  </div>
-  </div>
-  <!--End Card 6--->
-
-</div><!-- END Row -->
-
-</div><!-- END Container -->
-
-</section>
-
-  <script src="./js/app.js"></script>
-</body>
+		<script src="./js/app.js"></script>
+	</body>
 </html>
