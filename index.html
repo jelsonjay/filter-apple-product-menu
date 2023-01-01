@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Filter</title>
+  <!--LOCAL CSS-->
+  <link rel="stylesheet" href="./css/master.css">
+</head>
+<body>
+ <!---start portfolio---------->
+<section class="portfolio" id="portfolio">
+<div class="container">
+<div class="row mb-5">
+<div class="col d-flex flex-wrap text-uppercase justify-content-center">
+<div class="portfolio-header">
+<h1>Apple Product Menu</h1>
+</div>
+</div>
+</div>
+<div class="row">
+
+<header class="header">
+<div class="container">
+  <div id="mainBtn">
+    <button class="btn active" onclick="filterSelection('all')">SHOW ALL</button>
+    <button class="btn" onclick="filterSelection('mac')">Mac</button>
+    <button class="btn" onclick="filterSelection('iphone')">iPhone</button>
+    <button class="btn" onclick="filterSelection('watch')">Watch</button>
+    <button class="btn" onclick="filterSelection('air-pods')">AirPods</button>
+  </div>
+</div>
+</header>
+
+</div>
+
+<!--cards---->
+<div class="container">
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+
+<!--Start Card 1-->
+<div class="column watch">
+<div class="card">  
+<a href="http://kuiaonline.com/" target="_blank"><img src="./images/watch-1.png" class="card-img-top portfolio-img" alt=""></a>
+<div class="portfoliotext">
+<h6 class="font-weight-bold text-center text-uppercase"><a href="http://kuiaonline.com/" target="_blank"> KuiaOnline</a></h6>
+<p>This site was developer for a client who based in Angola.</p>
+</div>
+<!--end of card-->
+<div class="card-footer text-capitalize d-flex justify-content-between">
+<p><a class="github" href="https://github.com/jelsonjay" target="_blank"><i class="fa fa-github"></i> GitHub </a></p>
+<p class="test" data-toggle="modal" data-target="#kuiaonline">Learn More</p>
+<p class="portfolio-value align-self-center py-2 px-3">
+<span class="portfolio-icon">Done</span>
+</p>
+</div>
+
+</div>
+</div>
+<!--End Card 1--->
+
+ <!--Start Card 2-->
+  <div class="column air-pods">
+  <div class="card">  
+  <a href="https://github.com/jelsonjay" target="_blank"><img src="./images/air-pods.png" class="card-img-top portfolio-img" alt=""></a>
+  <div class="portfoliotext">
+  <h6 class="font-weight-bold text-center text-uppercase"><a href="https://pegaronline.com/" target="_blank"> pegaronline</a></h6>
+  <p>This site was developer for a client who based in Angola.</p>
+  </div>
+
+    <!--end of card-->
+  <div class="card-footer text-capitalize d-flex justify-content-between">
+  <p><a class="github" href="https://github.com/jelsonjay" target="_blank"><i class="fa fa-github"></i> GitHub </a></p>
+  <p class="test" data-toggle="modal" data-target="#pegaronline">Learn More</p>
+  <p class="portfolio-value align-self-center py-2 px-3">
+  <span class="portfolio-icon">Done</span>
+  </p>
+  </div>
+  </div>
+  </div>
+ <!--End Card 2--->
+
+<!--Start Card 3-->
+<div class="column mac">
+<div class="card">  
+<a href="http://kuiaonline.com/" target="_blank"><img src="./images/apple-mac-1.png" class="card-img-top portfolio-img" alt=""></a>
+<div class="portfoliotext">
+<h6 class="font-weight-bold text-center text-uppercase"><a href="http://kuiaonline.com/" target="_blank">Netflix Clone</a></h6>
+<p>This site was developer for a client who based in Angola.</p>
+</div>
+<!--end of card-->
+<div class="card-footer text-capitalize d-flex justify-content-between">
+<p><a class="github" href="https://github.com/jelsonjay" target="_blank"><i class="fa fa-github"></i> GitHub </a></p>
+<p class="test" data-toggle="modal" data-target="#netflix">Learn More</p>
+<p class="portfolio-value align-self-center py-2 px-3">
+<span class="portfolio-icon">Done</span>
+</p>
+</div>
+</div>
+</div>
+<!--End Card 3--->
+  
+<!--Start Card 4-->
+<div class="column iphone">
+  <div class="card">  
+  <a href="https://github.com/jelsonjay" target="_blank">
+  <img src="./images/apple-mac-2.png" class="card-img-top portfolio-img" alt="">
+</a>
+  <div class="portfoliotext">
+  <h6 class="font-weight-bold text-center text-uppercase"><a href="https://github.com/jelsonjay" target="_blank">sports-store</a></h6>
+  <p>This site was developer for a client who based in Angola.</p>
+  </div>
+  <!--end of card-->
+  <div class="card-footer text-capitalize d-flex justify-content-between">
+  <p><a class="github" href="https://github.com/jelsonjay" target="_blank"><i class="fa fa-github"></i> GitHub </a></p>
+  <p class="test" data-toggle="modal" data-target="#sports-store">Learn More</p>
+  <p class="portfolio-value align-self-center py-2 px-3">
+  <span class="portfolio-icon">Done</span>
+  </p>
+  </div>
+  </div>
+  </div>
+  <!--End Card 4--->
+
+
+<!--Start Card 5-->
+<div class="column iphone">
+  <div class="card">  
+  <a href="https://github.com/jelsonjay" target="_blank">
+  <img src="./images/iphone14.png" class="card-img-top portfolio-img" alt=""></a>
+  <div class="portfoliotext">
+  <h6 class="font-weight-bold text-center text-uppercase"><a href="https://my-chart.netlify.com/" target="_blank">sports-store</a></h6>
+  <p>This site was developer for a client who based in Angola.</p>
+  </div>
+  <!--end of card-->
+  <div class="card-footer text-capitalize d-flex justify-content-between">
+  <p><a class="github" href="https://github.com/jelsonjay" target="_blank"><i class="fa fa-github"></i> GitHub </a></p>
+  <p class="test" data-toggle="modal" data-target="#charts">Learn More</p>
+  <p class="portfolio-value align-self-center py-2 px-3">
+  <span class="portfolio-icon">Done</span>
+  </p>
+  </div>
+  </div>
+  </div>
+  <!--End Card 5--->
+
+
+<!--Start Card 6-->
+<div class="column watch">
+  <div class="card">  
+  <a href="https://jelsonjay.github.io/admin/" target="_blank"><img src="./images/watch-2.png" class="card-img-top portfolio-img" alt=""></a>
+  <div class="portfoliotext">
+  <h6 class="font-weight-bold text-center text-uppercase"><a href="https://jelsonjay.github.io/admin/" target="_blank">sports-store</a></h6>
+  <p>This site was developer for a client who based in Angola.</p>
+  </div>
+  <!--end of card-->
+  <div class="card-footer text-capitalize d-flex justify-content-between">
+  <p><a class="github" href="https://github.com/jelsonjay" target="_blank"><i class="fa fa-github"></i> GitHub </a></p>
+  <p class="test" data-toggle="modal" data-target="#admin">Learn More</p>
+  <p class="portfolio-value align-self-center py-2 px-3">
+  <span class="portfolio-icon">Done</span>
+  </p>
+  </div>
+  </div>
+  </div>
+  <!--End Card 6--->
+
+</div><!-- END Row -->
+
+</div><!-- END Container -->
+
+</section>
+
+  <script src="./js/app.js"></script>
+</body>
+</html>
