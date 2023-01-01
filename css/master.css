@@ -61,7 +61,7 @@ img {
 }
 
 .row {
-	margin: 10px -16px;
+	margin: 0px;
 }
 /* Add padding BETWEEN each column */
 .row,
@@ -73,7 +73,16 @@ img {
 .column {
 	float: left;
 	width: 33.33%;
-	display: none; /* Hide all elements by default */
+	display: none;
+	border: 0.1rem solid #ccc;
+	border-radius: 0.5rem;
+}
+
+.text-center {
+	text-align: center;
+	margin-top: 2rem;
+	font-size: 1.2rem;
+	text-transform: uppercase;
 }
 
 /* Clear floats after rows */
