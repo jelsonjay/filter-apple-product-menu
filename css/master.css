@@ -82,7 +82,6 @@ img {
 	text-align: center;
 	margin-top: 2rem;
 	font-size: 1.2rem;
-	text-transform: uppercase;
 }
 
 /* Clear floats after rows */
@@ -125,4 +124,8 @@ img {
 	color: white;
 	font-weight: bold;
 	border-style: none;
+}
+@media (max-width: 768px) {
+	container {
+	}
 }
