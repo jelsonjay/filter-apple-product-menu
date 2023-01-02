@@ -22,13 +22,16 @@
 	--f-family: 'Poppins', sans-serif;
 	--transition: all 0.3s linear;
 }
+/*======DEFAULT=======*/
+html {
+	scroll-behavior: smooth;
+}
 body {
 	font-family: var(--f-family);
 	line-height: 1.5;
 	transition: var(--transition);
 	background-color: var(--clr-bg);
 }
-/*======DEFAULT=======*/
 a {
 	text-decoration: none;
 }
@@ -117,12 +120,50 @@ img {
 	min-height: 30rem;
 }
 
+.card img {
+	border-radius: 0.5rem;
+	height: 25rem;
+}
+
 .card h2 {
 	text-align: center;
 	margin-top: 2rem;
 }
+.inner {
+	display: flex;
+	align-items: center;
+	padding: 1rem;
+	justify-content: space-between;
+}
+.inner > span {
+	font-weight: bold;
+}
 
-/*============MEDIA QUERY===============*/
+/*-----TOP UP-----*/
+.top-up {
+	position: fixed;
+	background-color: var(--primary);
+	right: 32px;
+	color: var(--clr-black);
+	width: 4rem;
+	height: 4rem;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2rem;
+	bottom: 2rem;
+	opacity: 0;
+	pointer-events: none;
+	transition: a 0.5s ease;
+}
+.top-up.active {
+	bottom: 2rem;
+	opacity: 1;
+	pointer-events: auto;
+}
+
+/*=======MEDIA QUERY========*/
 @media (max-width: 768px) {
 	.gallery .card {
 		grid-template-columns: 1fr;
