@@ -17,26 +17,38 @@
 	--clr-black: hsl(0, 0%, 0%);
 	--clr-coral: hsl(16, 100%, 66%);
 	--clr-wrapper: hsl(0, 33%, 4%);
+	--f-family: 'Poppins', sans-serif;
 }
 body {
 	margin: 0;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-family: var(--f-family);
+	line-height: 1.5;
+	transition: all 0.3s linear;
 	background-color: var(--clr-bg);
 }
-.wrapper {
-	max-width: 840px;
-	margin: 0 auto;
-}
-.item img {
+
+img {
 	width: 100%;
 	height: 100%;
+	display: block;
+	height: 100%;
+	object-fit: cover;
 }
-.item {
-	display: flex;
-	flex-wrap: wrap;
+.wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+	width: 100%;
+}
+.container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+	grid-gap: 1rem;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
 }
 .gallery {
-	background-color: var(--clr-bg);
+	background-color: #eee;
 	padding: 100px 7px;
 }
 .title {
@@ -60,7 +72,7 @@ body {
 	position: absolute;
 	height: 2px;
 	right: 32%;
-	background-color: #fff;
+	background-color: rgb(188, 7, 216);
 	bottom: 0px;
 }
 
@@ -76,7 +88,6 @@ body {
 	margin-bottom: 20px;
 }
 .gallery .buttons ul {
-	list-style: none;
 	text-align: center;
 	padding: 0;
 }
@@ -92,38 +103,32 @@ body {
 	color: var(--clr-coral);
 	border-bottom: 2px solid var(--clr-coral);
 }
-.gallery .work-gallery {
-	flex: 0 0 100%;
-	max-width: 100%;
-	display: flex;
-	flex-wrap: wrap;
+
+.card {
+	border: 0.1rem solid rgb(241, 187, 187);
+	border-radius: 0.5rem;
+	height: 30rem;
+	width: 25rem;
 }
-.gallery .work-gallery .cell {
-	flex: 0 0 33.33%;
-	max-width: 33.33%;
+
+.card h2 {
+	text-align: center;
+	margin-top: 2rem;
+}
+
+.gallery .card .inner {
 	position: relative;
-	padding: 10px;
 }
-.gallery .work-gallery .cell .inner {
-	position: relative;
-}
-.gallery .work-gallery .cell img {
-	width: 100%;
-	display: block;
-}
+
 /*============MEDIA QUERY===============*/
-@media screen and (max-width: 768px) {
-	.gallery .work-gallery .cell {
-		flex: 0 0 50%;
-		max-width: 50%;
-		position: relative;
-		padding: 10px;
+@media (max-width: 768px) {
+	.gallery .card {
+		width: 100%;
 	}
 }
 
-@media screen and (max-width: 468px) {
-	.gallery .work-gallery .cell {
-		flex: 0 0 100%;
-		max-width: 100%;
+@media (max-width: 468px) {
+	.gallery .card {
+		width: 50%;
 	}
 }

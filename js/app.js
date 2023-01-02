@@ -1,6 +1,6 @@
 //GALLERY FILTER
 const filterBnt = document.querySelector('#filter-btn').children;
-const allItems = document.querySelector('.work-gallery').children;
+const allItems = document.querySelector('.container').children;
 
 for (let i = 0; i < filterBnt.length; i++) {
 	filterBnt[i].addEventListener('click', function () {
