@@ -26,7 +26,19 @@ body {
 	transition: all 0.3s linear;
 	background-color: var(--clr-bg);
 }
-
+/*======DEFAULT=======*/
+a {
+	text-decoration: none;
+}
+li {
+	list-style: none;
+}
+h1 {
+	font-size: 2.1rem;
+}
+h2 {
+	font-size: 1.5rem;
+}
 img {
 	width: 100%;
 	height: 100%;
@@ -42,7 +54,7 @@ img {
 .container {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-	grid-gap: 1rem;
+	grid-gap: 1.5rem;
 	justify-content: center;
 	align-items: center;
 	margin: 0 auto;
